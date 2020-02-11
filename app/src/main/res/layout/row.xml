@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    app:layout_constraintCircleRadius="3dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/rTitleTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:elevation="12dp">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/rImageTv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/rTitleTv"
+        android:layout_marginTop="4dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/loading">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/rDescriptionTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/rImageTv"
+        android:background="#4DAF7C"
+        android:text="Product Description"
+        android:textSize="14dp"
+        android:textColor="@color/colorPrimaryDark">
+
+    </TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>
